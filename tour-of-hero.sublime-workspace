@@ -1,0 +1,959 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Json",
+				"JSON\tinterface"
+			],
+			[
+				"her",
+				"heroService\tproperty"
+			],
+			[
+				"Inmem",
+				"InMemoryWebApiModule\talias"
+			],
+			[
+				"te",
+				"templateUrl\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule } from '@angular/forms';\nimport { HttpModule } from '@angular/http';\n\nimport { AppRoutingModule } from './module/app-routing.module';\n\n// Imports for loading & configuring the in-memory web api\nimport { InMemoryWebApiModule } from 'angular-in-memory-web-api';\nimport { InMemoryDataService } from './service/in-memory-data.service';\n\nimport { AppComponent } from './component/app.component';\nimport { DashboardComponent } from './component/dashboard.component';\nimport { HeroesComponent } from './component/heroes.component';\nimport { HeroDetailComponent } from './component/hero-detail.component';\nimport { HeroService } from './service/hero.service';\nimport { HeroSearchComponent } from './component/hero-search.component';\n\n@NgModule({\n  imports: [\n    BrowserModule,\n    FormsModule,\n    HttpModule,\n    InMemoryWebApiModule.forRoot(InMemoryDataService),\n    AppRoutingModule\n  ],\n  declarations: [\n    AppComponent,\n    DashboardComponent,\n    HeroDetailComponent,\n    HeroesComponent,\n    HeroSearchComponent\n  ],\n  providers: [HeroService],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n\n\n/*\nCopyright 2017 Google Inc. All Rights Reserved.\nUse of this source code is governed by an MIT-style license that\ncan be found in the LICENSE file at http://angular.io/license\n*/",
+			"file": "src/app/app.module.ts",
+			"file_size": 1409,
+			"file_write_time": 131399964721294316,
+			"settings":
+			{
+				"buffer_size": 1409,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/module/app.module.ts",
+			"settings":
+			{
+				"buffer_size": 1417,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.ts",
+			"settings":
+			{
+				"buffer_size": 269,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/index.html",
+			"settings":
+			{
+				"buffer_size": 685,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/module/app-routing.module.ts",
+			"settings":
+			{
+				"buffer_size": 709,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/service/hero.service.ts",
+			"settings":
+			{
+				"buffer_size": 1894,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/service/hero-search.service.ts",
+			"settings":
+			{
+				"buffer_size": 675,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/component/app.component.ts",
+			"settings":
+			{
+				"buffer_size": 238,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/component/dashboard.component.ts",
+			"settings":
+			{
+				"buffer_size": 549,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/component/hero-detail.component.ts",
+			"settings":
+			{
+				"buffer_size": 956,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/component/hero-search.component.ts",
+			"settings":
+			{
+				"buffer_size": 2034,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/tsconfig.json",
+			"settings":
+			{
+				"buffer_size": 450,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/component/heroes.component.ts",
+			"settings":
+			{
+				"buffer_size": 813,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 325.0,
+		"last_filter": "json",
+		"selected_items":
+		[
+			[
+				"json",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"instllpa",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sql",
+				"SQL Beautifier: Format Current SQL File"
+			],
+			[
+				"SQL",
+				"SQL Beautifier: Format Current SQL File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 186.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/leo/study/angularjs/tour-of-hero/node_modules/@angular/core",
+		"/D/leo/study/angularjs/tour-of-hero/src",
+		"/D/leo/study/angularjs/tour-of-hero/src/app",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/component",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/module"
+	],
+	"file_history":
+	[
+		"/D/leo/study/angularjs/tour-of-hero/node_modules/@angular/core/@angular/core.js",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/dashboard.component.js",
+		"/D/leo/study/angularjs/tour-of-hero/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts",
+		"/D/leo/study/angularjs/tour-of-hero/node_modules/@angular/core/src/core.d.ts",
+		"/D/leo/study/angularjs/tour-of-hero/node_modules/@angular/common/@angular/common.js",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/app.component.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/template/app.component.html",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/dashboard.component.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/hero-detail.component.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/template/hero-detail.component.html",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/heroes.component.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/hero.service.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/template/hero-search.component.html",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/css/hero-search.component.css",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/hero-search.component.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/hero-search.service.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/template/dashboard.component.html",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/in-memory-data.service.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/app.module.ts",
+		"/D/leo/study/angularjs/tour-of-hero/src/app/mock-heroes.ts",
+		"/D/leo/study/npm/index.js",
+		"/C/Users/lilei/Desktop/new.json",
+		"/C/Users/lilei/Desktop/old.json",
+		"/C/Users/lilei/AppData/Local/Temp/~vsC21B.ruleset",
+		"/D/leo/study/webapi/referencesource/System.Xml/System/Xml/Serialization/Compilation.cs",
+		"/D/leo/works/expressdemo/myapp/app.js",
+		"/D/leo/works/GradleDemo/build.gradle",
+		"/D/leo/works/GradleDemo/gradle.build",
+		"/D/SVN/Documents/FS/furtherSql/CRM脚本/FSCRMTask-V5.1/Alter-TaskResult-TaskErrorInfo_20160107_cuil.sql",
+		"/D/SVN/FS.Service/V5N/Tools/CRMRefreshData/CRMRefreshData/bin/Debug/201704201053/error.log",
+		"/D/leo/study/opensource/elasticsearch/build.gradle",
+		"/D/leo/study/CSS/CoreUI-Free-Bootstrap-Admin-Template-master/CoreUI-Free-Bootstrap-Admin-Template-master/Angular_Full_Project_GULP/bower_components/angular-chart.js/gulpfile.js",
+		"/C/Users/lilei/Desktop/old",
+		"/C/Users/lilei/Desktop/new",
+		"/D/SVN/FS.Service/V5N/_FSFoundation/Master/FaciShare.Common.Extension/bin/Debug/Newtonsoft.Json.xml",
+		"/D/leo/study/opensource/AngularWebApiCrud/SM.Store.WebApi/SM.Store.Api.Models/SM.Store.Api.Models.csproj",
+		"/D/leo/study/angularjs/angular.js",
+		"/D/leo/works/angularjs/index.html",
+		"/D/leo/study/opensource/charisma-master/admin/index.html",
+		"/D/leo/study/opensource/charisma-master/admin/layouot-form.html",
+		"/D/leo/study/opensource/charisma-master/admin/blank.html",
+		"/C/Users/lilei/Desktop/replaced-with.json",
+		"/C/Users/lilei/Desktop/oneline-replaced.json",
+		"/C/Users/lilei/Desktop/online.json",
+		"/C/Users/lilei/Desktop/113.json",
+		"/C/Users/lilei/Desktop/oneline-format.json",
+		"/D/leo/docs/PAAS用户组接口定义/20170117.json",
+		"/C/Users/lilei/Desktop/paasgroupmodel.cs",
+		"/C/Users/lilei/Desktop/my.cs",
+		"/C/Users/lilei/Desktop/zhao.cs",
+		"/D/leo/works/CRMTools/CRMToolsWeb/Resources/ProtobufFieldMapping.json",
+		"/D/leo/works/CRMTools/CRMToolsWeb/Resources/unMatchedProtobufFields.json",
+		"/C/Users/lilei/Desktop/httpApisConfig.json",
+		"/C/Users/lilei/Desktop/httpApisConfig-new.json",
+		"/C/Users/lilei/Desktop/新建文本文档.txt",
+		"/C/Users/lilei/Desktop/httpApisConfig-112.json",
+		"/C/Users/lilei/Desktop/HttpApisConfig-prd-201601051908.json",
+		"/C/Users/lilei/Desktop/apis-xxx.json",
+		"/C/Users/lilei/Desktop/error/.net runtime.xml",
+		"/C/Users/lilei/Desktop/mongo.json",
+		"/C/Users/lilei/Desktop/open-all-facishare-urls.html",
+		"/C/Users/lilei/Desktop/httpApisConfig-112 -20161229.json",
+		"/C/Users/lilei/Desktop/GetSelectObjectListResult.json",
+		"/C/Users/lilei/Desktop/auth-httpapisconfig-112.json",
+		"/C/Users/lilei/Desktop/new-httpapisconfig-112.json",
+		"/C/Users/lilei/Desktop/new-httpapisconfig.json",
+		"/C/Users/lilei/Desktop/old-httpapisconfig.json",
+		"/D/leo/docs/CR/5.5/FieldPermission/Protobuf-Columns-Mapping.json",
+		"/D/leo/docs/CR/5.5/FieldPermission/table-column.json",
+		"/C/Users/lilei/Desktop/mine.json",
+		"/C/Users/lilei/Desktop/dacheng.json",
+		"/C/Users/lilei/Desktop/ObjectSelectResponse.json",
+		"/C/Users/lilei/Desktop/customerTrade-edit.json",
+		"/C/Users/lilei/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"D:\\SVN\\Documents\\FS\\furtherSql",
+			"",
+			"D:\\leo\\study\\opensource\\AngularWebApiCrud\\SM.Store.WebApi",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getHeroesSlowly",
+			"GetObjectFactory",
+			"Predicate",
+			"EIInt32IDS",
+			"DataId",
+			"5047",
+			"charts.html",
+			"not found in JSON. Path",
+			"Required property",
+			"10.0",
+			"1992",
+			"box col-md-12",
+			"GoogleActiveViewClass",
+			"gwd-taparea",
+			"gwd-image",
+			"http://",
+			"paas-org.nsvc.foneshare.cn",
+			"paas-privilege.nsvc.foneshare.cn",
+			"QueryUserRoleCodesByUsers",
+			"auth",
+			"auth-",
+			"auth",
+			".auth.",
+			"paas-privilege.nsvc.foneshare.cn",
+			"auth",
+			"paas-org.nsvc.foneshare.cn",
+			"group",
+			"PAAS.GROUP.MEM",
+			"paas-org.nsvc.foneshare.cn",
+			"paas-privilege.nsvc.foneshare.cn",
+			"}\n",
+			"paas-org.nsvc.foneshare.cn",
+			"paas-privilege.nsvc.foneshare.cn",
+			"QueryUserRoleCodesByUsers",
+			"fs.paas.auth",
+			"QueryUserRolesByUsers",
+			"QueryFunction",
+			"QueryRoleInfoWithCodes",
+			"QueryRoleUsersByRoles",
+			"QueryRoleCodeListByUserId",
+			"queryRoleCodeListByUserId",
+			"QueryUserRoleCodesByUsers",
+			"10.112.32.47:8003",
+			"group",
+			"10.112.32.47:8006",
+			"10.112.32.46:8005",
+			"\"\"",
+			",",
+			"GroupPageResult",
+			"ListPageResult",
+			"UserListArg",
+			"?",
+			"？",
+			"; ",
+			"QueryRoleUsersByRoles",
+			"fs-paas-auth.QueryRoleUsersByRoles",
+			"http://10.113.32.47:8003/fs-paas-auth",
+			"10.112.32.47:8002",
+			"QueryGroupByIdListAsync",
+			"RoleFunctionEntity",
+			"Owner",
+			"employee",
+			"CustomerLimitInfo",
+			"V5EmployeeSolidEntity",
+			"10.113.32.47:8003",
+			"\\\"",
+			"Opportunity",
+			"MarketingEventID",
+			"V5EmployeeSolidEntity",
+			"EmployeeRoleScopeInfoList",
+			"group",
+			"roleFuncPermiss",
+			"=",
+			";",
+			")",
+			"(",
+			" \"tenantId\": \"2\"",
+			"查看列表",
+			"fs-paas-auth",
+			"10.113.32.47",
+			"visit",
+			"InventoryTeamMember",
+			"CustomerTeamMember",
+			"VisitTeamMember",
+			"TradeBillTeamMember",
+			"TradeRefundTeamMember",
+			"TradePaymentTeamMember",
+			"ContractTeamMember",
+			"ReturnOrderTeamMember",
+			"CustomerOrderTeamMember",
+			"OpportunityTeamMember",
+			"ContactTeamMember",
+			"SalesClueTeamMember",
+			"CustomerTeamMember",
+			"608bc9d422b7404db6844bb5d1e13d46",
+			"10003",
+			"6222"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"paas.nsvc.foneshare.cn",
+			"paas-org.nsvc.foneshare.cn",
+			"paas-privilege.nsvc.foneshare.cn",
+			"\"",
+			",\\n",
+			";\\n",
+			"http://10.112.32.47:8006/fs-paas-auth",
+			"10.113.32.47:8005",
+			"SharedObjectEntity",
+			"10.112.32.47:8006",
+			"\"",
+			":",
+			",",
+			" }",
+			" {",
+			" \"tenantId\": \"53431\"",
+			"MarketingEventTeamMember",
+			"InventoryTeamMember",
+			"ProductTeamMember",
+			"VisitTeamMember",
+			"TradeBillTeamMember",
+			"TradeRefundTeamMember",
+			"TradePaymentTeamMember",
+			"ContractTeamMember",
+			"ReturnOrderTeamMember",
+			"CustomerOrderTeamMember",
+			"OpportunityTeamMember",
+			"ContactTeamMember",
+			"SalesClueTeamMember"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1000,
+								1000
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/app/module/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1119,
+								1119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								269
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/index.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685,
+								685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/app/module/app-routing.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/app/service/hero.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								483,
+								483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/app/service/hero-search.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/app/component/app.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								193,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/app/component/dashboard.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/app/component/hero-detail.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/app/component/hero-search.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1187,
+								1188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/tsconfig.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								447,
+								447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/app/component/heroes.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								301,
+								301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tour-of-hero.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 413.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

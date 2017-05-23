@@ -1,0 +1,7 @@
+<h2>Group list</h2>
+<div *ngIf="groups.length>0">Total:{{groups.length}}</div>
+<ol>
+<li *ngFor="let group of groups">
+	<a><span>{{group.name}}</span>-<span>{{group.getCreateTime()}}</span></a>
+</li>
+</ol>
